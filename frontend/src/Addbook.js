@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Addbook.css"; // Import the CSS file
 
 const AddBook = () => {
   const [title, setTitle] = useState("");
@@ -21,7 +22,7 @@ const AddBook = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2>Add a new book</h2>
       <form onSubmit={handleSubmit}>
         <div>
